@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.MainPage">
 
-    <VerticalStackLayout Margin="30,60,30,30">
+    <VerticalStackLayout Padding="{OnPlatform iOS='30,60,30,30', Default='30'}"
+                         BackgroundColor="{OnPlatform WinUI=Yellow, iOS=Silver, Android=Green}">
+        
         <Label Text="Notes"
                HorizontalOptions="Center"
                FontAttributes="Bold" />
